@@ -13,12 +13,9 @@ import io.hydok.data.datasource.RemoteDataSourceImpl
 @InstallIn(SingletonComponent::class)
 abstract class DataSourceModule {
 
-
     @Binds
     abstract fun bindRemoteDataSource(impl: RemoteDataSourceImpl): RemoteDataSource
 
     @Binds
     abstract fun bindLocalDataSource(impl: LocalDataSourceImpl): LocalDataSource
-
-
 }
